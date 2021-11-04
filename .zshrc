@@ -30,6 +30,7 @@ fi
 # )
 plugins=(
   git
+	kubectl
 )
 
 source $ZSH/oh-my-zsh.sh

@@ -3,8 +3,8 @@
 echo "TEST" > $HOME/test.txt
 
 # copy files over
-# cp -r files $HOME
-# cp -r scripts $HOME/scripts
+cp -r files $HOME
+cp -r scripts $HOME/scripts
 
 # install homebrew
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

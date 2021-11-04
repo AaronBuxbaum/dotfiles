@@ -17,11 +17,13 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 # brew cask install iterm2
 # curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh
 
-# source zsh
-exec bash
+# add homebrew to PATH
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> $HOME/.profile
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Homebrew
 brew install git zsh zsh-completions pgcli pre-commit python pyenv pyenv-virtualenv kubernetes-cli aws-iam-authenticator postgresql@13 redis github/gh/gh volta rust pipx graphql-playground visual-studio-code openssl
+brew install fd fzf jq rg  # helpful shell tools
 
 # Powerline fonts
 git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh
@@ -29,12 +31,9 @@ git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
 
-# helpful shell tools
-# brew install fd fzf jq rg
-
 # homebrew services
-# brew services start redis
-# brew services start postgresql
+brew services start redis
+brew services start postgresql
 
 # Volta
 volta setup

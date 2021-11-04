@@ -1,3 +1,6 @@
+" Pathogen
+execute pathogen#infect()
+
 " Appearance
 syntax enable
 set background=dark

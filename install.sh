@@ -1,16 +1,14 @@
 #!/bin/bash
 
-echo "TEST" > $HOME/test.txt
-
 # copy files over
-cp -r files $HOME
-cp -r scripts $HOME/scripts
+cp -r files/ $HOME/
+cp -r scripts/ $HOME/scripts
 
 # install homebrew
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install poetry
-# curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 
 # install AWS CLI - https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 # install Docker - https://hub.docker.com/editions/community/docker-ce-desktop-mac
@@ -20,13 +18,13 @@ cp -r scripts $HOME/scripts
 # curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh
 
 # Homebrew
-# brew install git zsh zsh-completions pgcli pre-commit python pyenv pyenv-virtualenv kubernetes-cli aws-iam-authenticator postgresql@13 redis github/gh/gh volta rust pipx graphql-playground visual-studio-code openssl
+brew install git zsh zsh-completions pgcli pre-commit python pyenv pyenv-virtualenv kubernetes-cli aws-iam-authenticator postgresql@13 redis github/gh/gh volta rust pipx graphql-playground visual-studio-code openssl
 
 # Powerline fonts
-# git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh
+git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh
 
 # Install oh-my-zsh
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
 
 # helpful shell tools
 # brew install fd fzf jq rg
@@ -36,7 +34,7 @@ cp -r scripts $HOME/scripts
 # brew services start postgresql
 
 # Volta
-# volta setup
+volta setup
 
 # Compilers
 # xcode-select --install

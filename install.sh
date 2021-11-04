@@ -22,7 +22,7 @@ echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> $HOME/.profile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Homebrew
-brew install git zsh zsh-completions pgcli pre-commit python pyenv pyenv-virtualenv kubernetes-cli aws-iam-authenticator postgresql@13 redis gh volta rust pipx openssl
+brew install git zsh zsh-completions pgcli pre-commit python pyenv pyenv-virtualenv kubernetes-cli aws-iam-authenticator postgresql redis gh volta rust pipx openssl
 
 brew install fd fzf jq rg  # helpful shell tools
 
@@ -42,21 +42,22 @@ volta setup
 # Compilers
 # xcode-select --install
 
-# Pip
-# pip3 install pykubectl ipython
+# pip
+python --version # TODO: remove
+pip install pykubectl ipython
 
 # Python libraries
-# pipx install black
-# pipx install cookiecutter
-# pipx install fourmat
-# pipx install howdoi
-# pipx install httpie
-# pipx install ipython
-# pipx install --include-deps jupyter
-# pipx install markdown
-# pipx install poetry
-# pipx install pyupgrade
-# pipx install tox
+pipx install black
+pipx install cookiecutter
+pipx install fourmat
+pipx install howdoi
+pipx install httpie
+pipx install ipython
+pipx install --include-deps jupyter
+pipx install markdown
+pipx install poetry
+pipx install pyupgrade
+pipx install tox
 
 # PyEnv
 # pyenv install 3.9-dev

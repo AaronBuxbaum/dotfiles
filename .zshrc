@@ -8,6 +8,12 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # zsh completions
 # fpath=(/usr/local/share/zsh-completions $fpath)
+if type brew &>/dev/null; then
+	FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+	autoload -Uz compinit
+	compinit
+fi
 
 # plugins=(
 #   docker

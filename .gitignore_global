@@ -11,3 +11,6 @@
 # ignore virtualenv dirs
 .venv
 venv
+
+# env
+.env

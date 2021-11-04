@@ -22,7 +22,7 @@ echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> $HOME/.profile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Homebrew
-brew install git zsh zsh-completions pgcli pre-commit python pyenv pyenv-virtualenv kubernetes-cli aws-iam-authenticator postgresql@13 redis gh volta rust pipx openssl visual-studio-code
+brew install git zsh zsh-completions pgcli pre-commit python pyenv pyenv-virtualenv kubernetes-cli aws-iam-authenticator postgresql@13 redis gh volta rust pipx openssl
 
 brew install fd fzf jq rg  # helpful shell tools
 

@@ -17,6 +17,9 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 # brew cask install iterm2
 # curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh
 
+# source zsh
+exec bash
+
 # Homebrew
 brew install git zsh zsh-completions pgcli pre-commit python pyenv pyenv-virtualenv kubernetes-cli aws-iam-authenticator postgresql@13 redis github/gh/gh volta rust pipx graphql-playground visual-studio-code openssl
 

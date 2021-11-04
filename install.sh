@@ -1,3 +1,8 @@
+#!/usr/bin/env bash
+
+set -eux
+echo "TEST" > ~/test.txt
+
 # copy files
 cp -r files $HOME
 cp -r scripts $HOME/scripts

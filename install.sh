@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # copy files over
-cp -r files/ $HOME/
-cp -r scripts/ $HOME/scripts
+rsync -r files/ $HOME
+rsync -r scripts/ $HOME/scripts
 
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

@@ -7,23 +7,21 @@ cp -r scripts/ $HOME/scripts
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# install poetry
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
-
-# install AWS CLI - https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-# install Docker - https://hub.docker.com/editions/community/docker-ce-desktop-mac
-
+# install AWS CLI
+# install Docker
+# install VSCode
+# install GraphQL Playground
 # Install iTerm2
-# brew cask install iterm2
-# curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh
+
+# iTerm zsh integration
+curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh
 
 # add homebrew to PATH
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> $HOME/.profile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Homebrew
-brew install git zsh zsh-completions pgcli pre-commit python pyenv pyenv-virtualenv kubernetes-cli aws-iam-authenticator postgresql redis gh volta rust pipx openssl
-
+brew install git zsh zsh-completions starship poetry pgcli pre-commit python pyenv pyenv-virtualenv kubernetes-cli aws-iam-authenticator postgresql redis gh volta rust pipx openssl
 brew install fd fzf jq rg  # helpful shell tools
 
 # Powerline fonts
@@ -43,8 +41,7 @@ volta setup
 # xcode-select --install
 
 # pip
-python --version # TODO: remove
-pip install pykubectl ipython
+pip3 install pykubectl ipython
 
 # Python libraries
 pipx install black

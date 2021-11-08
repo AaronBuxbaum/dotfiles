@@ -31,6 +31,7 @@ fi
 plugins=(
   git
 	kubectl
+	poetry
 )
 source $ZSH/oh-my-zsh.sh
 

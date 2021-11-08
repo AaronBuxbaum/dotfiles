@@ -30,6 +30,10 @@ git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
 
+# poetry autocompletions
+mkdir $ZSH_CUSTOM/plugins/poetry
+poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
+
 # homebrew services
 brew services start redis
 brew services start postgresql

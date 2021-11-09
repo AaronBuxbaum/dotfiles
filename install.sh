@@ -53,6 +53,7 @@ git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vi
 
 # Python libraries
 pipx install black
+pipx install flake8
 pipx install cookiecutter
 pipx install fourmat
 pipx install howdoi
@@ -63,6 +64,7 @@ pipx install markdown
 pipx install poetry
 pipx install pyupgrade
 pipx install tox
+pipx install isort
 
 # PyEnv
 # pyenv install 3.9-dev
